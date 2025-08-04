@@ -2,12 +2,15 @@
 import './App.css';
 import Header from './components/header';
 import Footer from './components/footer';
+import StyledComponent from './components/Styledcomponents';
 
 function App() {
   return (
     <>
       <Header />
+      <StyledComponent />
       <Footer />
+
     </>
   );
 }
