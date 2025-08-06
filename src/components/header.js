@@ -1,9 +1,11 @@
 // import"./header.css";
 import styles from './header.module.css';
+import { InputStyle, InputWrapper } from './components.styled';
 const Header = () => {
   return (
     <header className={styles.header}>
       <nav>
+        <InputWrapper>
         <ul className={styles.list}>
           <li className={styles['list-item']}>
             <a href='#'>Home</a>
@@ -15,6 +17,8 @@ const Header = () => {
             <a href='#'>About</a>
           </li>
         </ul>
+          <InputStyle type="text" placeholder="Search..." />
+        </InputWrapper>
       </nav>
     </header>
   );
